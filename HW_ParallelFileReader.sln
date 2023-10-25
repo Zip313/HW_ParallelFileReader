@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW_ParallelFileReader", "HW_ParallelFileReader\HW_ParallelFileReader.csproj", "{FB74F1E9-6F42-4F4C-8ECA-7843927FA344}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB74F1E9-6F42-4F4C-8ECA-7843927FA344}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB74F1E9-6F42-4F4C-8ECA-7843927FA344}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB74F1E9-6F42-4F4C-8ECA-7843927FA344}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB74F1E9-6F42-4F4C-8ECA-7843927FA344}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A428C1BA-ED2F-403B-86A7-D4B1453101F9}
+	EndGlobalSection
+EndGlobal
