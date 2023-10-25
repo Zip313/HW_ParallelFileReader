@@ -2,6 +2,6 @@
 {
     public interface IFileReader
     {
-        List<FileStatistics> GetStatistic();
+        Task<IEnumerable<FileStatistics>> GetStatistic();
     }
 }

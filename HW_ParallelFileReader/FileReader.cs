@@ -33,7 +33,7 @@ namespace HW_ParallelFileReader
             return fileStatistics;
         }
 
-        public List<FileStatistics> GetStatistic()
+        public async Task<IEnumerable<FileStatistics>> GetStatistic()
         {
             List<Task<FileStatistics>> fileStatisticsTasks = new List<Task<FileStatistics>>();
             foreach (string filePath in filesPath)
@@ -41,10 +41,10 @@ namespace HW_ParallelFileReader
                 var task = Task.Run(() => { return CalculateSpacesInFile(filePath); });
                 fileStatisticsTasks.Add(task);
             }
-            Task.WaitAll(fileStatisticsTasks.ToArray());
-            var res = fileStatisticsTasks.Select(task => task.Result).ToList();
 
-            return res;
+            var result = await Task.WhenAll(fileStatisticsTasks);
+
+            return result;
         }
     }
 }
