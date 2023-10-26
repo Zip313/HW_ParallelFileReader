@@ -15,7 +15,7 @@
 
             foreach ( var item in statistics )
             {
-                Console.WriteLine(item);
+                Console.WriteLine(item); 
             }
         }
     }

@@ -40,7 +40,7 @@ namespace HW_ParallelFileReader
             {
                 var task = Task.Run(() => { return CalculateSpacesInFile(filePath); });
                 fileStatisticsTasks.Add(task);
-            }
+            } 
 
             var result = await Task.WhenAll(fileStatisticsTasks);
 
